@@ -21,5 +21,4 @@ class Tuba:
         for element in self.aknad_uksed:
             uus_pindala = uus_pindala - element.pindala
         self.tap_rull = uus_pindala / self.tap_rull
-        print("{0} ruutmeetri jaoks kulub {1} tapeedi rulli".format(self.pindalad(self.korgus, self.pikkus, self.laius), round(self.tap_rull)))
-        return uus_pindala
+        print("{0} ruutmeetri jaoks kulub {1} tapeedi rulli".format(uus_pindala, round(self.tap_rull)))
