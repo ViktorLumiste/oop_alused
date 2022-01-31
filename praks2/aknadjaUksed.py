@@ -2,7 +2,6 @@ class AknadUksed:
     def __init__(self, pikkus, laius):
         self.pindala = pikkus * laius
 
-
 class Tuba:
     def __init__(self, pikkus, laius, korgus):
         self.aknad_uksed = []
@@ -22,5 +21,5 @@ class Tuba:
         for element in self.aknad_uksed:
             uus_pindala = uus_pindala - element.pindala
         self.tap_rull = uus_pindala / self.tap_rull
-        print("{0} ruutmeetri jaoks kulub {1} tapeedi rulli".format(self.pindalad(self.korgus, self.pikkus, self.laius), self.tap_rull))
+        print("{0} ruutmeetri jaoks kulub {1} tapeedi rulli".format(self.pindalad(self.korgus, self.pikkus, self.laius), round(self.tap_rull)))
         return uus_pindala
