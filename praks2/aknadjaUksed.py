@@ -1,7 +1,6 @@
 class AknadUksed:
     def __init__(self, pikkus, laius):
         self.pindala = pikkus * laius
-
 class Tuba:
     def __init__(self, pikkus, laius, korgus):
         self.aknad_uksed = []
