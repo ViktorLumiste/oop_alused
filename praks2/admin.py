@@ -1,5 +1,5 @@
 from kasutajad2 import Kasutajad
 class Admin(Kasutajad):
-    privileegid = ""
+    privileegid = []
     def naita_priv(self):
         print(self.privileegid)
