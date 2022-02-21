@@ -25,8 +25,10 @@ class Opilane:
         self.teadmised.append(info)
     def unustab(self):
         """Kustutab teadmised õpilase objektist"""
-        teadmised1 = ",".join(self.teadmised)
-        print("Õpilane teab neid teemasid " + teadmised1)
+        print("Õpilane teab neid teemasid: ")
+        for new_lst in self.teadmised:
+            print(new_lst, end=',')
+        print("\n")
         pikkus = len(self.teadmised)-1
         ununeb = randint(0, pikkus)
         sleep(5)
